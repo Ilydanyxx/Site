@@ -1,0 +1,340 @@
+@import './pagination-system';
+
+.shopping-list-container {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.shopping-list-left {
+  @media (max-width: 1439px) {
+    // display: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+
+.shopping-list-right {
+  margin-top: 40px;
+  flex-grow: 1;
+}
+
+.shopping-list {
+  @media (min-width: $desktop) {
+    padding-left: 40px;
+  }
+}
+
+.shopping-empty-container {
+  margin: 120px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: $desktop) {
+    margin-top: 140px;
+  }
+}
+
+.shopping-list-tittle {
+  // margin-bottom: 120px;
+  margin-top: 0;
+  // padding-left: 20px;
+  color: var(--text-color-two);
+  font-size: 32px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -1.28px;
+
+  @media (min-width: $tablet) and (max-width: 1439px) {
+    // padding-left: 32px;
+    // margin-bottom: 140px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.92px;
+  }
+
+  @media (min-width: $desktop) {
+    // padding-left: 40px;
+    // margin-bottom: 140px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.92px;
+  }
+}
+
+.sh-list-span {
+  color: #4f2ee8;
+}
+
+.shopping-empty-text {
+  margin-bottom: 14px;
+  margin-top: 0;
+  width: 244px;
+  color: var(--text-color-three);
+  text-align: center;
+  font-size: 14px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+
+  @media (min-width: $tablet) {
+    width: 349px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+  }
+}
+
+.shopping-empty-image {
+  width: 265px;
+  height: 198px;
+
+  @media (min-width: $tablet) {
+    width: 322px;
+    height: 241px;
+  }
+}
+
+/* cardlist */
+.shopping-cardlist-container {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+.shopping-list-cardlist {
+  margin-top: 40px;
+  @media (min-width: $tablet) and (max-width: 1439px) {
+  }
+
+  @media (min-width: $desktop) {
+  }
+}
+
+.shopping-list-card {
+  margin-bottom: 20px;
+  padding: 14px;
+  height: 170px;
+  width: 335px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  border: 2px solid rgba(79, 46, 232, 0.4);
+  background: var(--bg-color-one);
+
+  @media (min-width: $tablet) and (max-width: 1439px) {
+    width: 704px;
+    height: 213px;
+    padding: 30px 24px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 213px;
+    width: 996px;
+    padding: 30px 24px;
+  }
+}
+
+.shopping-list-cardlogo {
+  border-radius: 8px;
+  width: 100px;
+  height: 142px;
+
+  @media (min-width: $tablet) {
+    width: 116px;
+    height: 165px;
+  }
+}
+
+.shopping-list-fullinfo {
+  margin-left: 14px;
+
+  @media (min-width: $tablet) {
+    margin-left: 24px;
+  }
+}
+
+.shopping-list-cardheaer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 14px;
+  }
+}
+
+.deletecard {
+  background-image: url(../images/shoplist/trash-mob.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 28px;
+
+  @media (min-width: $tablet) {
+    background-image: url(../images/shoplist/trash-tab.svg);
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+  }
+}
+
+.shopping-list-cardtitle {
+  height: 18px;
+  overflow: hidden;
+  overflow: hidden;
+  color: var(--text-color-two);
+  font-size: 16px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+  margin: 0px 0px 4px 0px;
+}
+
+.shopping-list-cardcategory {
+  height: 14px;
+  overflow: hidden;
+  margin: 0px;
+  color: var(--text-color-three);
+  font-size: 12px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.36px;
+}
+
+.shopping-list-icon {
+  @media (min-width: $tablet) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.shopping-list-carddescription {
+  width: 193px;
+  height: 68px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 0px 0px 16px 0px;
+  overflow: hidden;
+  color: var(--text-color-two);
+  // text-overflow: ellipsis;
+  // whitespace: nowrap;
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+
+  @media (min-width: $tablet) and (max-width: 1439px) {
+    width: 508px;
+    height: 53px;
+    margin: 0px 0px 48px 0px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 808px;
+    height: 53px;
+    margin: 0px 0px 48px 0px;
+  }
+}
+
+.shopping-list-cardfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shopping-list-cardauthor {
+  height: 14px;
+  overflow: hidden;
+  margin: 0px;
+  color: var(--text-color-three);
+  font-size: 12px;
+  font-family: DM Sans;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.48px;
+}
+
+.shopping-list-shops {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    gap: 16px;
+  }
+}
+
+.shopping-list-shopsicon1 {
+  width: 32px;
+  height: 11px;
+  background-image: url(../images/shoplist/book1-mob.png);
+
+  @media (min-width: $tablet) {
+    background-image: url(../images/shoplist/book1-tab.png);
+    width: 48px;
+    height: 15px;
+  }
+}
+
+.shopping-list-shopsicon2 {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/shoplist/book2-mob.png);
+  border-radius: 28px;
+  @media (min-width: $tablet) {
+    background-image: url(../images/shoplist/book2-tab.png);
+    width: 28px;
+    height: 27px;
+  }
+}
+
+.shopping-list-shopsicon3 {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/shoplist/book3-mob.png);
+  border-radius: 28px;
+  @media (min-width: $tablet) {
+    background-image: url(../images/shoplist/book3-tab.png);
+    width: 32px;
+    height: 30px;
+  }
+}
+
+// .support {
+//   margin-top: 40px;
+//   @media screen and (min-width: $tablet) {
+//     margin-top: 0px;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     margin-top: 40px;
+//   }
+// }
+
+// .container {
+//   margin-left: 0px;
+// }

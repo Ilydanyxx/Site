@@ -1,0 +1,28 @@
+:root {
+  /* ОНОВЛЕНІ КОЛЬОРИ ДЛЯ ЗМІНИ ТЕМИ */
+
+  /* Header */
+  --bg-color-one: #fff;
+  --bg-color-two: #f6f6f6;
+  --elements-color: #111111;
+  --logo-color: #000000;
+  /* Common */
+  --text-color-one: rgba(17, 17, 17, 0.6);
+  --text-color-hover: #4f2ee8;
+  --text-color-two: #111111;
+  --text-color-three: #b4afaf;
+  --scroll-color: #e0e0e0;
+}
+
+:root[theme='color-theme'] {
+  /* Header */
+  --bg-color-one: #111111;
+  --bg-color-two: #202024;
+  --logo-color: #f3f3f3;
+  --elements-color: #ffffff;
+  /* Common */
+  --text-color-one: rgba(255, 255, 255, 0.6);
+  --text-color-hover: #eac645;
+  --text-color-two: #ffffff;
+  --scroll-color: rgba(17, 17, 17, 0.6);
+}
