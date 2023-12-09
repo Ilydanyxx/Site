@@ -8,7 +8,7 @@
 
 .shopping-list-left {
   @media (max-width: 1439px) {
-    // display: none;
+   
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -44,9 +44,9 @@
 }
 
 .shopping-list-tittle {
-  // margin-bottom: 120px;
+
   margin-top: 0;
-  // padding-left: 20px;
+ 
   color: var(--text-color-two);
   font-size: 32px;
   font-family: 'DM Sans';
@@ -56,16 +56,14 @@
   letter-spacing: -1.28px;
 
   @media (min-width: $tablet) and (max-width: 1439px) {
-    // padding-left: 32px;
-    // margin-bottom: 140px;
+ 
     font-size: 48px;
     line-height: 52px;
     letter-spacing: -1.92px;
   }
 
   @media (min-width: $desktop) {
-    // padding-left: 40px;
-    // margin-bottom: 140px;
+ 
     font-size: 48px;
     line-height: 52px;
     letter-spacing: -1.92px;
@@ -107,11 +105,8 @@
   }
 }
 
-/* cardlist */
 .shopping-cardlist-container {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+
 }
 .shopping-list-cardlist {
   margin-top: 40px;
@@ -236,8 +231,7 @@
   margin: 0px 0px 16px 0px;
   overflow: hidden;
   color: var(--text-color-two);
-  // text-overflow: ellipsis;
-  // whitespace: nowrap;
+ 
   font-size: 14px;
   font-family: DM Sans;
   font-style: normal;
@@ -323,18 +317,3 @@
     height: 30px;
   }
 }
-
-// .support {
-//   margin-top: 40px;
-//   @media screen and (min-width: $tablet) {
-//     margin-top: 0px;
-//   }
-
-//   @media screen and (min-width: $desktop) {
-//     margin-top: 40px;
-//   }
-// }
-
-// .container {
-//   margin-left: 0px;
-// }

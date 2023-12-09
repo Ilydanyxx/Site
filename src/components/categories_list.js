@@ -11,7 +11,7 @@ async function onPageLoad() {
 
     renderCategoriesList(response);
   } catch (error) {
-    // errorMessage();
+    
     console.error(error);
   }
 }

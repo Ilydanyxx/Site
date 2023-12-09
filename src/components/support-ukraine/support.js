@@ -1,6 +1,3 @@
-// Svitlana
-
-
 import { supportArray } from "./support-array";
 
 const supportList = document.querySelector('.support-list-js');

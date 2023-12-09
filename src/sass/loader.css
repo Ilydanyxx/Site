@@ -6,8 +6,7 @@
     #4f2ee8 18.03%,
     #ffffff 100%
   );
-  /* background-color: #b5a7f3; */
-  /* backdrop-filter: blur(8px); */
+
   position: fixed;
   top: 0;
   z-index: 100;
@@ -17,7 +16,6 @@
   align-items: center;
 }
 
-/* Animation */
 @-webkit-keyframes rotate {
   to {
     transform: rotate(360deg);
@@ -28,8 +26,7 @@
     transform: rotate(360deg);
   }
 }
-/* Variables */
-/* Loading Icon */
+
 .loading {
   width: 100px;
   height: 100px;
@@ -52,8 +49,7 @@
 .loading__ring svg {
   -webkit-animation: rotate 1s linear infinite;
   animation: rotate 1s linear infinite;
-  /* fill: rgba(0, 0, 0, 0.2); */
-  /* fill: #4f2ee8; */
+
   fill: #ffffff;
 }
 

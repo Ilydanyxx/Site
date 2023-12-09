@@ -1,5 +1,3 @@
-// Svitlana
-
 export function hideMask() {
     const mask = document.querySelector('.mask');
     if (mask) {

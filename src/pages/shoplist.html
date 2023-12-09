@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf - Shopping list</title>
-    <!-- Icon -->
+
     <link
       rel="icon"
       type="image/png"
@@ -15,9 +15,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap"
     />
-    <!-- Styles -->
+
     <link rel="stylesheet" href="../sass/index.scss" />
-    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,9 +26,8 @@
     />
   </head>
   <body>
-    <!-- Header -->
     <include src="./pages/blocks/header.html"></include>
-    <!-- Main -->
+
     <h1 class="visually-hidden">Bookshelf - Shopping List</h1>
     <div class="shopping-list-container container">
       <section class="shopping-list-left">
@@ -64,11 +63,7 @@
                       Hardcover fiction
                     </h4>
                   </div>
-                  <button class="deletecard">
-                    <!-- <svg class="shopping-list-icon" width="16px" height="16px">
-                      <use href="../images/sprite.svg#icon-trash"></use>
-                    </svg> -->
-                  </button>
+                  <button class="deletecard"></button>
                 </div>
                 <p class="shopping-list-carddescription">
                   David Burroughs was once a devoted father to his
@@ -121,7 +116,7 @@
         <div class="pagination-system"></div>
       </section>
     </div>
-    <!-- script -->
+
     <include src="./pages/loader.html"></include>
     <script type="module" src="../common.js"></script>
     <script type="module" src="../components/shoplist.js"></script>

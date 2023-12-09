@@ -1,7 +1,6 @@
 import { getBookById } from '../api';
 import { deleteFromStorage, getStoredItems } from './localStorageApi';
 
-// Отримання даних з localStorage
 let shoppingList = [];
 function init() {
   const windowHeight = window.innerWidth;
@@ -19,7 +18,6 @@ function init() {
 
 init();
 
-// Функція для створення карточки з даними
 function createShoppingCard(book) {
   const { buy_links } = book;
   const cardListContainer = document.querySelector('.shopping-list-cardlist');
@@ -101,24 +99,10 @@ function createShoppingCard(book) {
   cardListContainer.append(listItem);
 }
 
-// Функція для генерації посилань на магазини
 function generateShopLinks(shops) {
-  // return shops
-  //   .map(
-  //     shop => `
-  //   <li class="shopping-list-shopsitem">
-  //     <a href="${shop.url}" class="shopping-list-shopslink">
-  //       <svg class="shopping-list-shopsicon" width="16" height="16">
-  //         <use href="../images/sprite.svg#icon-burger"></use>
-  //       </svg>
-  //     </a>
-  //   </li>
-  // `
-  //   )
-  //   .join('');
+
 }
 
-// Відображення карточок з даними з localStorage
 async function displayShoppingCards() {
   const cardListContainer = document.querySelector('.shopping-list-cardlist');
   cardListContainer.innerHTML = '';
@@ -137,14 +121,10 @@ async function displayShoppingCards() {
   });
 }
 
-// Оновлення даних в localStorage
 function updateLocalStorage() {
   localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
 }
 
-// Приклад додавання книги до списку
-
-// updateLocalStorage();
 displayShoppingCards();
 
 function deleteCard(event) {

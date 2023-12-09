@@ -101,7 +101,7 @@
   flex-direction: row;
   column-gap: 25px;
 }
-/* D */
+
 @media screen and (max-width: 1440px) {
   .bestsellers-tablet {
     display: none;
@@ -137,14 +137,14 @@
     top: 162px;
   }
 }
-/* D */
+
 @media screen and (min-width: 1440px) {
   .bookcard-image {
     width: 180px;
     height: 256px;
   }
 }
-/* D */
+
 @media screen and (min-width: 1440px) {
   .bestsellers-list-item {
     width: 1000px;
@@ -199,16 +199,7 @@
   justify-content: center;
   display: flex;
 }
-/* Dima */
-/* .bestsellers-home {
-  margin-top: 40px;
-} */
-/* Dima */
-/* .bestsellers-name {
-  margin-top: 40px;
-} */
 
 .style-js {
-  /* margin-left: 40px; */
   margin-bottom: 40px;
 }

@@ -1,6 +1,3 @@
-// Svitlana
-
-
 import saveTheChildren1x from '/src/images/support-img/save-the-children@1x.png';
 import saveTheChildren2x from '/src/images/support-img/save-the-children@2x.png';
 import projectHOPE1x from '/src/images/support-img/project-hope@1x.png';

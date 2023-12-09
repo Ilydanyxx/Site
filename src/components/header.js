@@ -147,7 +147,7 @@ function checkUserData (event) {
       }
      
     if (submitInfo.user_name === feedback.user_name && submitInfo.user_password === feedback.user_password) {
-        // isSignUpFormSubmitted = true;
+
         userInfo.user_name = submitInfo.user_name;
         if (window.innerWidth > 768) {
         authHeaderBtn.classList.toggle('visually-hidden');
@@ -235,8 +235,7 @@ function checkAuth () {
 }
 
 function makeLogOut () {
-    
-    // localStorage.clear();
+
     sessionStorage.clear();
     userInfo = {};
     submitInfo = {};
@@ -297,7 +296,6 @@ window.addEventListener('DOMContentLoaded', () => {
     restoreClassChanges();
 });
 authBtn.addEventListener('click', openFirstModal);
-// authEl.addEventListener('click', openFirstModal);
 burgerEl.addEventListener('click', openMenu);
 switchEl.addEventListener('change', toggleSwitchEl);
 signUpBtn.addEventListener('click', openSecondModal);

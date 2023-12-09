@@ -35,9 +35,6 @@ const bestListItemModal = document.querySelector('.bestsellers-list-item');
 
 console.log(bestListModal);
 
-// const idFunction = getBookById(id)
-
-// bookcardForModal.addEventListener('click', openModal)
 
 let id;
 
@@ -46,8 +43,7 @@ function getCardId(event) {
   if (closestDiv) {
     id = closestDiv.id;
   }
-  // console.log('id = ' + id)
-  // console.log('e.target.classlist = '+ event.target.classList)
+
   return id;
 }
 
@@ -63,10 +59,7 @@ function closeModal(e) {
   modalOverlay.classList.remove('open-modal');
 
   bodyToScroll.classList.remove('stop-overflow');
-  // windowToScroll.off('scroll', preventScroll);
 
-  // const congratsText = document.querySelector('.congrats-text');
-  // congratsText.classList.remove('congrats-text-active');
 }
 
 function handleKeyPress(event) {
@@ -75,7 +68,6 @@ function handleKeyPress(event) {
   }
 }
 
-//------------------test---------------------
 
 function openModal(e) {
   console.log('this');
@@ -93,14 +85,10 @@ function openModal(e) {
   modalOverlay.classList.add('open-modal');
 
   bodyToScroll.classList.add('stop-overflow');
-  // windowToScroll.on('scroll', preventScroll);
-
-  // const bookId = e.dataset.id
-  // console.log('bookId in openModal '+bookId)
 
   const bookId = getCardId(e);
   console.log(bookId);
-  // console.log('bookId in openModal '+bookId)
+
   if (!checkIdInStorage(bookId)) {
     addButton.textContent = 'ADD TO SHOPPING LIST';
   } else {
@@ -150,13 +138,6 @@ function openModal(e) {
     appleBooksUrl,
     booksAMillionUrl
   ) {
-    // console.log('Author:', author);
-    // console.log('Description:', description);
-    // console.log('Title:', title);
-    // console.log('Image:', image);
-    // console.log('Amazon URL:', amazonUrl);
-    // console.log('Apple Books URL:', appleBooksUrl);
-    // console.log('Books-A-Million URL:', booksAMillionUrl);
 
     modalBookName.textContent = title;
     modalAuthor.textContent = author;

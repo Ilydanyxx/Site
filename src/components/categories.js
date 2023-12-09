@@ -16,12 +16,10 @@ const displayCategories = () => {
       const categoryRow = document.createElement('div');
       categoryRow.classList.add('category-row');
 
-      // Створюємо кнопку "Усі категорії"
       const allCategoriesButton = createCategoryButton('All categories', null);
       allCategoriesButton.addEventListener('click', () => handleCategoryButtonClick(allCategoriesButton, null));
       categoryRow.appendChild(allCategoriesButton);
 
-      // Створюємо кнопки для кожної категорії
       categories.forEach(category => {
         const categoryButton = createCategoryButton(category.list_name, category.list_name);
         categoryButton.addEventListener('click', () => handleCategoryButtonClick(categoryButton, category.list_name));
@@ -30,24 +28,18 @@ const displayCategories = () => {
 
       categoryList.appendChild(categoryRow);
 
-      // Перевіряємо, чи не вибрано жодної категорії
-      // if (!lastClickedButton) {
-      //   handleCategoryButtonClick(allCategoriesButton, null);
-      // }
     })
     .catch(error => {
       console.log(error);
     });
 };
 
-// Функція для створення кнопки категорії
 const createCategoryButton = (text, category) => {
   const categoryButton = document.createElement('button');
   categoryButton.innerText = text;
   return categoryButton;
 };
 
-// Обробник події кліку на кнопку категорії
 const handleCategoryButtonClick = (button, category) => {
   if (lastClickedButton !== button) {
     displayBooksByCategory(category);
@@ -97,22 +89,6 @@ console.log(categoriesEl)
   getBooksByCategory(category)
     .then(response => {
       booksEl.textContent = category;
-      // categoriesEl.innerHTML = '';
-
-
-
-    //   const titles = document.querySelectorAll(".bookcard-name")
-    //   const authors = document.querySelectorAll(".bookcard-author")
-    //   const images = document.querySelectorAll(".bookcard-image")
-
-    //   for (let j = 0; j < 20; j++) {
-    //     const a = Math.floor(Math.random() * response.data.length);
-    //     titles[j].textContent = response.data[a].title
-    //     authors[j].textContent = response.data[a].author
-    //     images[j].src = response.data[a].book_image
-        
-        
-    // }
 
     const booksData = response.data;
     const message = document.createElement('p');
@@ -127,11 +103,7 @@ console.log(categoriesEl)
         booksContainer.appendChild(message);
       } else {
         booksData.forEach(book => {
-          // console.log(book);
-          
-          // const bookElement = document.createElement('p');
-          // bookElement.innerText = book.title;
-          // booksContainer.appendChild(bookElement);
+
         });
       }
     })

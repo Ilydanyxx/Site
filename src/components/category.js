@@ -10,9 +10,6 @@ if (categoriesListEl) {
 
 }
 
-// seeMoreEl.addEventListener('click', onCategoryClick);
-// let selectedCategoryName = '';
-
 async function onCategoryClick(e) {
   const clickedCategoryLink = e.target.textContent;
 

@@ -1,5 +1,3 @@
-// Svitlana
-
 import Swiper from 'swiper';
 
 const btnSwiper = document.querySelector('.swiper-button-next')

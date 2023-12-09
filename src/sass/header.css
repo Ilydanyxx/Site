@@ -31,7 +31,7 @@
   background-color: var(--bg-color-one);
   transition: background-color 1s;
   fill: var(--logo-color);
-  /* transition: fill 1s; */
+ 
 }
 
 .navigation-menu {
@@ -143,11 +143,6 @@
   background-color: #eac645;
 }
 
-/* .shopping-list-circle {
-    align-self: start;
-    fill: #4F2EE8;
-  } */
-
 .user_name {
   margin-right: 4px;
   color: #fff;
@@ -163,8 +158,6 @@
 .logout-group {
   display: none;
 }
-
-/* Dropdown */
 
 .dropdown-menu {
   position: relative;
@@ -283,8 +276,6 @@
   letter-spacing: -0.56px;
 }
 
-/* Modal */
-
 .no-scroll {
   overflow: hidden;
 }
@@ -304,9 +295,6 @@
   height: 100%;
   background-color: #4f2ee8;
 
-  /* transform: translateX(0); */
-  /* transition: opacity 300ms linear, visibility 300ms linear;  */
-
   overflow-y: scroll;
 }
 
@@ -325,7 +313,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
 
   transform: translate(-50%, -50%);
-  /* transition: transform 0.5s linear; */
+  
 }
 
 .sign-up-modal.sign-in {
@@ -342,12 +330,12 @@
 
 .sign-up-form {
   margin-bottom: 14px;
-  /* width: 100%; */
+  
 }
 
 .sign-up-list-form {
   margin-bottom: 24px;
-  /* width: 100%; */
+  
   list-style: none;
   padding-inline-start: 0;
   display: flex;
@@ -371,7 +359,7 @@
 
 .sign-up-icon {
   position: absolute;
-  /* bottom: 200px; */
+  
   right: 44px;
   background-color: #202024;
   stroke: #fff;
@@ -431,7 +419,6 @@
   text-decoration-line: underline;
 }
 
-/* Media */
 
 @media screen and (min-width: 768px) {
   .header {

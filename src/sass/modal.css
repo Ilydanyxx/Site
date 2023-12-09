@@ -23,8 +23,6 @@
   overflow: hidden;
 }
 .modal-window-container {
-  /* можливий скролл модального вікна */
-  /* overflow: auto; */
   position: absolute;
   width: 335px;
   height: 806px;
@@ -33,7 +31,6 @@
   background-color: #ffffff;
   visibility: hidden;
 
-  /* центрування */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -43,12 +40,6 @@
 
 @media screen and (min-width: 768px) {
   .modal-window-container {
-    /* padding: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 580px;
-    height: 465px; */
     padding: 40px;
     top: 50%;
     left: 50%;
@@ -250,9 +241,6 @@
   text-align: center;
 
   margin-left: 47px;
-  /* visibility: hidden; */
-
-  /* margin-bottom: 40px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -271,7 +259,6 @@
 }
 
 .congrats-text-active {
-  /* visibility: visible; */
 }
 
 @media screen and (min-width: 768px) {
